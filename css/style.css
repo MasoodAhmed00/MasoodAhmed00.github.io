@@ -646,7 +646,19 @@ pre {
   -webkit-box-ordinal-group: 10;
   -ms-flex-order: 9;
   order: 9; }
-
+  #certifications-section .block-20 {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #certifications-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
 .order-10 {
   -webkit-box-ordinal-group: 11;
   -ms-flex-order: 10;
