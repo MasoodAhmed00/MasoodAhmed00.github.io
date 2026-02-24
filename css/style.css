@@ -9091,11 +9091,11 @@ textarea.form-control {
     font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 3em 0; } }
 
 .ftco-no-pt {
   padding-top: 0 !important; }
@@ -9715,3 +9715,45 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background: #0f172a;
+  padding: 12px 0;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 5s linear infinite;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.ticker-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+
+/* Pause on Hover */
+.ticker-container:hover .ticker-track {
+  animation-play-state: paused;
+}
